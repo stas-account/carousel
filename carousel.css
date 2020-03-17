@@ -1,0 +1,134 @@
+* {
+	margin:0;
+	padding:0;
+}
+* a {
+	text-decoration:none;
+	color:black;
+}
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+
+
+/* IMAGE CAROUSEL */
+
+.container-2 {
+	position:relative;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+.container-2 .container-carousel > i {
+	padding: 121px 0;
+	position:absolute;
+	cursor: pointer;
+	transition: all 1s ease 0s;
+	z-index:2;
+}
+.container-2 .container-carousel .fa-angle-right {
+	opacity:0;
+	font-size: 40px;
+	top: 130px;
+	right: -30px;
+}
+.container-2 .container-carousel .fa-angle-left {
+	opacity:0;
+	font-size: 40px;
+	top: 130px;
+	left: -30px;
+}
+.container-2 .container-carousel:hover > i {
+	opacity:1;
+}
+
+.container-2 .container-ul {
+	border-bottom: 1px solid #e5e5e5;
+}
+.container-2 .container-ul ul {
+	margin-bottom: 0;
+	float:right;
+	display:inline-block;
+	list-style-type:none;
+}
+.container-2 .container-ul ul li {
+	text-align:right;
+	display:inline-block;
+}
+.container-2 .container-ul ul li a {
+	transition: all 500ms ease 0s;
+	color: #343538;
+	text-decoration: none;
+	line-height: 1.42857143;
+	padding: 0 7px 9px;
+	font-size: 21px;
+}
+.container-2 .container-ul ul li a:hover {
+	cursor:pointer;
+}
+.container-2 .container-ul ul li.active a {
+	border-bottom: 3px solid #e83f33;
+	color: #e83f33;
+}
+.container-2 .container-ul h2 {
+	margin-bottom:10px;
+	font-weight: 800;
+	text-transform: uppercase;
+	float:left;
+	text-align:left;
+	display:inline-block;
+}
+
+.container-2 .container-carousel {
+	overflow: hidden;
+}
+
+.container-2 .carousel.active {
+	text-align:left;
+	width:3000px;
+	display:block;
+}
+.container-2 .carousel .section-carousel {
+	display:inline-block;
+	width:295px;
+	margin-left: -4px;
+}
+.container-2 .carousel .div-image > a {
+	height:450px;
+	position:relative;
+	display:block;
+}
+.container-2 .carousel .div-image > a:hover {
+	cursor:pointer;
+}
+.container-2 .carousel .div-image .first-img {
+	position:absolute;
+	top: 13px;
+	left: 6px;
+}
+.container-2 .carousel .div-image .hover-img {
+	transition: all 0.8s ease 0s;
+	opacity:0;
+	position:absolute;
+	top: 13px;
+	left: 6px;
+}
+.container-2 .carousel .div-image a:hover .hover-img {
+	opacity:1;
+}
+.container-2 .carousel .div-image figure {
+	background: #dcdcdc47;
+	text-align:center;
+	margin:4px;
+}
+.container-2 .carousel .div-image figure img {
+	outline:1px solid silver;
+	width:260px;
+	height:260px;
+}
+
+/* end IMAGE CAROUSEL */
