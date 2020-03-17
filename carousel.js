@@ -9,6 +9,7 @@ let distance0,
     distance1,
     distance2,
     distance3;
+
 let distanceArr = [distance0 = 0, distance1 = 0, distance2 = 0, distance3 = 0];
 
 /* Блок кода для функционала переключения между каруселями */
